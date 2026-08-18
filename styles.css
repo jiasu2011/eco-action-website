@@ -223,9 +223,17 @@ summary:focus-visible,
 @media (max-width: 759px) {
   .site-nav {
     position: absolute;
-    right: 1.25rem;
+    right: calc(100vw-28rem);
     top: 100%;
-    width: min(260px, calc(100vw - 2.5rem));
+    width: min(150px, calc(100vw - 3rem));
+  }
+
+  .nav-list {
+    height: 100%;
+  }
+
+  .nav-list li {
+    font-size: 0.6rem;
   }
 
   .site-header__inner {
@@ -243,12 +251,36 @@ summary:focus-visible,
 }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 480px) {
+  .nav-list {
+    height: 75%;
+  }
+
+  .nav-list li {
+    font-size: 0.4rem;
+  }
+
   .site-nav {
     position: absolute;
-    right: 1.25rem;
-    top: 100%;
-    width: min(260px, calc(100vw - 2.5rem));
+    right: calc(100vw-28rem);
+    top: 75%;
+    width: min(100px, calc(100vw - 3rem));
+  }
+
+@media (max-width: 280px) {
+  .nav-list {
+    height: 75%;
+  }
+
+  .nav-list li {
+    font-size: 0.2rem;
+  }
+
+  .site-nav {
+    position: absolute;
+    right: calc(100vw-28rem);
+    top: 70%;
+    width: min(75px, calc(100vw - 3rem));
   }
 
   .site-header__inner {
